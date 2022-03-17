@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="src/main.js" defer></script>
+  <title>Petfood</title>
+</head>
+<body>
+  <div class="plain">
+    <h1>ПЛАН</h1>
+    <span>Вес:</span>
+
+    <select class="select" style="margin-right: 20px;">
+      <option data-weight value="0.35" class="option">350гр</option>
+      <option data-weight value="0.4" class="option">400гр</option>
+      <option data-weight value="0.5" class="option">500гр</option>
+      <option data-weight value="1" class="option">1кг</option>
+      <option data-weight value="1.8" class="option">1.8кг</option>
+      <option data-weight value="2" class="option">2кг</option>
+      <option data-weight value="2.2" class="option">2.2кг</option>
+      <option data-weight value="2.4" class="option">2.4кг</option>
+      <option data-weight value="2.5" class="option">2.5кг</option>
+      <option data-weight value="10" class="option">10кг</option>
+      <option data-weight value="13" class="option">13кг</option>
+      <option data-weight value="15" class="option">15кг</option>
+      <option data-weight value="20" class="option">20кг</option>
+    </select>
+
+    <span>План(тонн):</span>
+    <input type="text" class="input-how-weight">
+    <button class="total-pallet-btn">Рассчитать</button><br><br>
+    <span>Паллет: <span class="total-pallets-needs"></span></span><br>
+    <span>Этикеток: <span class="total-stickers-needs"></span></span>
+  </div>
+  <div class="fact">
+    <h2>СПИСАНИЕ</h2>
+    <span>Паллет сделано:</span>
+    <input type="text" class="pallets-done">
+    <span> + Коробок:</span>
+    <input type="text" class="boxes-done">
+    <button class="write-off-btn">Рассчитать</button><br><br>
+    <span>Упаковок: <span class="total-pieces"></span></span><br>
+    <span>Коробок: <span class="write-off-boxes"></span></span><br>
+    <span>Уголков: <span class="write-off-triang"></span></span><br>
+  </div>
+</body>
+</html>
